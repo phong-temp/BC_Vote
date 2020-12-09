@@ -1,0 +1,15 @@
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.exe
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.deps.json
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.runtimeconfig.json
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.runtimeconfig.dev.json
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.dll
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.pdb
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csprojAssemblyReference.cache
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csproj.GenerateResource.cache
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.AssemblyInfoInputs.cache
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.AssemblyInfo.cs
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csproj.CoreCompileInputs.cache
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.dll
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.pdb
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.genruntimeconfig.cache
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.MainForm.resources
