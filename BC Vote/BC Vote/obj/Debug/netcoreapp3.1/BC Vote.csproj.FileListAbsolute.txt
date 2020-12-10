@@ -13,3 +13,4 @@ C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC V
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.pdb
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.genruntimeconfig.cache
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.MainForm.resources
+C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.Properties.Resources.resources

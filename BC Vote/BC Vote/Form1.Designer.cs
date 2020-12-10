@@ -30,6 +30,9 @@ namespace BC_Vote
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
+            System.Windows.Forms.ListViewItem listViewItem1 = new System.Windows.Forms.ListViewItem("Nguyễn Văn A");
+            System.Windows.Forms.ListViewItem listViewItem2 = new System.Windows.Forms.ListViewItem("Nguyễn Văn B");
+            System.Windows.Forms.ListViewItem listViewItem3 = new System.Windows.Forms.ListViewItem("Nguyễn Thị Thanh Dung");
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.fileToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,7 +64,26 @@ namespace BC_Vote
             this.toolStripSeparator5 = new System.Windows.Forms.ToolStripSeparator();
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
+            this.listView1 = new System.Windows.Forms.ListView();
+            this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
+            this.btnTimKiem = new System.Windows.Forms.Button();
+            this.btnKiemPhieu = new System.Windows.Forms.Button();
+            this.btnDangKyThamDu = new System.Windows.Forms.Button();
+            this.lbTitleSelect = new System.Windows.Forms.Label();
+            this.panCheThanhChon = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabTimkiem = new System.Windows.Forms.TabPage();
+            this.tabKiemPhieu = new System.Windows.Forms.TabPage();
+            this.tbxInputKiemPhieu = new System.Windows.Forms.TextBox();
+            this.tabDangKyThamDu = new System.Windows.Forms.TabPage();
             this.menuStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
+            this.splitContainer1.Panel1.SuspendLayout();
+            this.splitContainer1.Panel2.SuspendLayout();
+            this.splitContainer1.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabKiemPhieu.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -165,6 +187,7 @@ namespace BC_Vote
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.Size = new System.Drawing.Size(291, 44);
             this.exitToolStripMenuItem.Text = "E&xit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // editToolStripMenuItem
             // 
@@ -309,11 +332,167 @@ namespace BC_Vote
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
+            // splitContainer1
+            // 
+            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.Location = new System.Drawing.Point(0, 40);
+            this.splitContainer1.Name = "splitContainer1";
+            // 
+            // splitContainer1.Panel1
+            // 
+            this.splitContainer1.Panel1.Controls.Add(this.listView1);
+            this.splitContainer1.Panel1.Controls.Add(this.btnTimKiem);
+            this.splitContainer1.Panel1.Controls.Add(this.btnKiemPhieu);
+            this.splitContainer1.Panel1.Controls.Add(this.btnDangKyThamDu);
+            this.splitContainer1.Panel1.Controls.Add(this.lbTitleSelect);
+            // 
+            // splitContainer1.Panel2
+            // 
+            this.splitContainer1.Panel2.Controls.Add(this.panCheThanhChon);
+            this.splitContainer1.Panel2.Controls.Add(this.tabControl1);
+            this.splitContainer1.Size = new System.Drawing.Size(1400, 731);
+            this.splitContainer1.SplitterDistance = 466;
+            this.splitContainer1.TabIndex = 2;
+            // 
+            // listView1
+            // 
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1});
+            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView1.FullRowSelect = true;
+            this.listView1.GridLines = true;
+            this.listView1.HideSelection = false;
+            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            listViewItem1,
+            listViewItem2,
+            listViewItem3});
+            this.listView1.Location = new System.Drawing.Point(0, 51);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(466, 503);
+            this.listView1.TabIndex = 4;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.List;
+            // 
+            // columnHeader1
+            // 
+            this.columnHeader1.Width = 500;
+            // 
+            // btnTimKiem
+            // 
+            this.btnTimKiem.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnTimKiem.Image = ((System.Drawing.Image)(resources.GetObject("btnTimKiem.Image")));
+            this.btnTimKiem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.Location = new System.Drawing.Point(0, 554);
+            this.btnTimKiem.Name = "btnTimKiem";
+            this.btnTimKiem.Size = new System.Drawing.Size(466, 59);
+            this.btnTimKiem.TabIndex = 3;
+            this.btnTimKiem.Text = "      Tìm kiếm";
+            this.btnTimKiem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnTimKiem.UseVisualStyleBackColor = true;
+            this.btnTimKiem.Click += new System.EventHandler(this.btnTimKiem_Click);
+            // 
+            // btnKiemPhieu
+            // 
+            this.btnKiemPhieu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnKiemPhieu.Image = ((System.Drawing.Image)(resources.GetObject("btnKiemPhieu.Image")));
+            this.btnKiemPhieu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKiemPhieu.Location = new System.Drawing.Point(0, 613);
+            this.btnKiemPhieu.Name = "btnKiemPhieu";
+            this.btnKiemPhieu.Size = new System.Drawing.Size(466, 59);
+            this.btnKiemPhieu.TabIndex = 2;
+            this.btnKiemPhieu.Text = "      Kiểm phiếu";
+            this.btnKiemPhieu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnKiemPhieu.UseVisualStyleBackColor = true;
+            this.btnKiemPhieu.Click += new System.EventHandler(this.btnKiemPhieu_Click);
+            // 
+            // btnDangKyThamDu
+            // 
+            this.btnDangKyThamDu.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnDangKyThamDu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangKyThamDu.Location = new System.Drawing.Point(0, 672);
+            this.btnDangKyThamDu.Name = "btnDangKyThamDu";
+            this.btnDangKyThamDu.Size = new System.Drawing.Size(466, 59);
+            this.btnDangKyThamDu.TabIndex = 1;
+            this.btnDangKyThamDu.Text = "      Đăng ký tham dự";
+            this.btnDangKyThamDu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnDangKyThamDu.UseVisualStyleBackColor = true;
+            this.btnDangKyThamDu.Click += new System.EventHandler(this.btnDangKyThamDu_Click);
+            // 
+            // lbTitleSelect
+            // 
+            this.lbTitleSelect.BackColor = System.Drawing.SystemColors.ActiveBorder;
+            this.lbTitleSelect.Dock = System.Windows.Forms.DockStyle.Top;
+            this.lbTitleSelect.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lbTitleSelect.Location = new System.Drawing.Point(0, 0);
+            this.lbTitleSelect.Name = "lbTitleSelect";
+            this.lbTitleSelect.Size = new System.Drawing.Size(466, 51);
+            this.lbTitleSelect.TabIndex = 0;
+            this.lbTitleSelect.Text = "Tìm kiếm";
+            // 
+            // panCheThanhChon
+            // 
+            this.panCheThanhChon.Location = new System.Drawing.Point(0, 0);
+            this.panCheThanhChon.Name = "panCheThanhChon";
+            this.panCheThanhChon.Size = new System.Drawing.Size(0, 0);
+            this.panCheThanhChon.TabIndex = 1;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabTimkiem);
+            this.tabControl1.Controls.Add(this.tabKiemPhieu);
+            this.tabControl1.Controls.Add(this.tabDangKyThamDu);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(930, 731);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabTimkiem
+            // 
+            this.tabTimkiem.Location = new System.Drawing.Point(8, 51);
+            this.tabTimkiem.Name = "tabTimkiem";
+            this.tabTimkiem.Padding = new System.Windows.Forms.Padding(3);
+            this.tabTimkiem.Size = new System.Drawing.Size(914, 672);
+            this.tabTimkiem.TabIndex = 0;
+            this.tabTimkiem.Text = "find";
+            this.tabTimkiem.UseVisualStyleBackColor = true;
+            // 
+            // tabKiemPhieu
+            // 
+            this.tabKiemPhieu.Controls.Add(this.tbxInputKiemPhieu);
+            this.tabKiemPhieu.Location = new System.Drawing.Point(8, 51);
+            this.tabKiemPhieu.Name = "tabKiemPhieu";
+            this.tabKiemPhieu.Padding = new System.Windows.Forms.Padding(3);
+            this.tabKiemPhieu.Size = new System.Drawing.Size(914, 672);
+            this.tabKiemPhieu.TabIndex = 1;
+            this.tabKiemPhieu.Text = "check";
+            this.tabKiemPhieu.UseVisualStyleBackColor = true;
+            // 
+            // tbxInputKiemPhieu
+            // 
+            this.tbxInputKiemPhieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbxInputKiemPhieu.Location = new System.Drawing.Point(3, 3);
+            this.tbxInputKiemPhieu.Name = "tbxInputKiemPhieu";
+            this.tbxInputKiemPhieu.Size = new System.Drawing.Size(908, 43);
+            this.tbxInputKiemPhieu.TabIndex = 0;
+            // 
+            // tabDangKyThamDu
+            // 
+            this.tabDangKyThamDu.Location = new System.Drawing.Point(8, 51);
+            this.tabDangKyThamDu.Name = "tabDangKyThamDu";
+            this.tabDangKyThamDu.Padding = new System.Windows.Forms.Padding(3);
+            this.tabDangKyThamDu.Size = new System.Drawing.Size(914, 672);
+            this.tabDangKyThamDu.TabIndex = 2;
+            this.tabDangKyThamDu.Text = "sign";
+            this.tabDangKyThamDu.UseVisualStyleBackColor = true;
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1400, 793);
+            this.Controls.Add(this.splitContainer1);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.menuStrip1);
             this.Font = new System.Drawing.Font("Segoe UI", 10.125F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -322,6 +501,13 @@ namespace BC_Vote
             this.Text = "BC Vote";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.splitContainer1.Panel1.ResumeLayout(false);
+            this.splitContainer1.Panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
+            this.splitContainer1.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabKiemPhieu.ResumeLayout(false);
+            this.tabKiemPhieu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -360,6 +546,20 @@ namespace BC_Vote
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator5;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
         private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.SplitContainer splitContainer1;
+        private System.Windows.Forms.Button btnDangKyThamDu;
+        private System.Windows.Forms.Label lbTitleSelect;
+        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.Button btnTimKiem;
+        private System.Windows.Forms.Button btnKiemPhieu;
+        private System.Windows.Forms.ColumnHeader columnHeader1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Panel panCheThanhChon;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabTimkiem;
+        private System.Windows.Forms.TabPage tabKiemPhieu;
+        private System.Windows.Forms.TabPage tabDangKyThamDu;
+        private System.Windows.Forms.TextBox tbxInputKiemPhieu;
     }
 }
 
