@@ -14,3 +14,31 @@ C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC V
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.genruntimeconfig.cache
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.MainForm.resources
 C:\Users\phong\source\repos\BC_Vote\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.Properties.Resources.resources
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.exe
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.deps.json
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.runtimeconfig.json
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.runtimeconfig.dev.json
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\BC Vote.pdb
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csprojAssemblyReference.cache
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.MainForm.resources
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC_Vote.Properties.Resources.resources
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csproj.GenerateResource.cache
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.AssemblyInfoInputs.cache
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.AssemblyInfo.cs
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csproj.CoreCompileInputs.cache
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.pdb
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.genruntimeconfig.cache
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\EPPlus.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\bin\Debug\netcoreapp3.1\System.Xml.XPath.XmlDocument.dll
+C:\Users\phong\Google Drive\Document\Visual Studio 2019\Project\BC Vote\BC Vote\obj\Debug\netcoreapp3.1\BC Vote.csproj.CopyComplete

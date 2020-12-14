@@ -65,7 +65,7 @@ namespace BC_Vote
             this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.listView1 = new System.Windows.Forms.ListView();
+            this.listView = new System.Windows.Forms.ListView();
             this.columnHeader1 = new System.Windows.Forms.ColumnHeader();
             this.btnTimKiem = new System.Windows.Forms.Button();
             this.btnKiemPhieu = new System.Windows.Forms.Button();
@@ -74,15 +74,20 @@ namespace BC_Vote
             this.panCheThanhChon = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabTimkiem = new System.Windows.Forms.TabPage();
+            this.btnP2TimKiem = new System.Windows.Forms.Button();
+            this.tbxTimKiem = new System.Windows.Forms.TextBox();
             this.tabKiemPhieu = new System.Windows.Forms.TabPage();
+            this.btnKiemTra = new System.Windows.Forms.Button();
             this.tbxInputKiemPhieu = new System.Windows.Forms.TextBox();
             this.tabDangKyThamDu = new System.Windows.Forms.TabPage();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
             this.tabControl1.SuspendLayout();
+            this.tabTimkiem.SuspendLayout();
             this.tabKiemPhieu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -340,7 +345,9 @@ namespace BC_Vote
             // 
             // splitContainer1.Panel1
             // 
-            this.splitContainer1.Panel1.Controls.Add(this.listView1);
+            this.splitContainer1.Panel1.AutoScroll = true;
+            this.splitContainer1.Panel1.AutoScrollMinSize = new System.Drawing.Size(200, 0);
+            this.splitContainer1.Panel1.Controls.Add(this.listView);
             this.splitContainer1.Panel1.Controls.Add(this.btnTimKiem);
             this.splitContainer1.Panel1.Controls.Add(this.btnKiemPhieu);
             this.splitContainer1.Panel1.Controls.Add(this.btnDangKyThamDu);
@@ -354,24 +361,25 @@ namespace BC_Vote
             this.splitContainer1.SplitterDistance = 466;
             this.splitContainer1.TabIndex = 2;
             // 
-            // listView1
+            // listView
             // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.listView.AllowColumnReorder = true;
+            this.listView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeader1});
-            this.listView1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listView1.FullRowSelect = true;
-            this.listView1.GridLines = true;
-            this.listView1.HideSelection = false;
-            this.listView1.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
+            this.listView.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.listView.FullRowSelect = true;
+            this.listView.GridLines = true;
+            this.listView.HideSelection = false;
+            this.listView.Items.AddRange(new System.Windows.Forms.ListViewItem[] {
             listViewItem1,
             listViewItem2,
             listViewItem3});
-            this.listView1.Location = new System.Drawing.Point(0, 51);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(466, 503);
-            this.listView1.TabIndex = 4;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.List;
+            this.listView.Location = new System.Drawing.Point(0, 51);
+            this.listView.Name = "listView";
+            this.listView.Size = new System.Drawing.Size(466, 503);
+            this.listView.TabIndex = 4;
+            this.listView.UseCompatibleStateImageBehavior = false;
+            this.listView.View = System.Windows.Forms.View.List;
             // 
             // columnHeader1
             // 
@@ -399,7 +407,7 @@ namespace BC_Vote
             this.btnKiemPhieu.Location = new System.Drawing.Point(0, 613);
             this.btnKiemPhieu.Name = "btnKiemPhieu";
             this.btnKiemPhieu.Size = new System.Drawing.Size(466, 59);
-            this.btnKiemPhieu.TabIndex = 2;
+            this.btnKiemPhieu.TabIndex = 1;
             this.btnKiemPhieu.Text = "      Kiểm phiếu";
             this.btnKiemPhieu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnKiemPhieu.UseVisualStyleBackColor = true;
@@ -412,7 +420,7 @@ namespace BC_Vote
             this.btnDangKyThamDu.Location = new System.Drawing.Point(0, 672);
             this.btnDangKyThamDu.Name = "btnDangKyThamDu";
             this.btnDangKyThamDu.Size = new System.Drawing.Size(466, 59);
-            this.btnDangKyThamDu.TabIndex = 1;
+            this.btnDangKyThamDu.TabIndex = 2;
             this.btnDangKyThamDu.Text = "      Đăng ký tham dự";
             this.btnDangKyThamDu.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDangKyThamDu.UseVisualStyleBackColor = true;
@@ -450,6 +458,8 @@ namespace BC_Vote
             // 
             // tabTimkiem
             // 
+            this.tabTimkiem.Controls.Add(this.btnP2TimKiem);
+            this.tabTimkiem.Controls.Add(this.tbxTimKiem);
             this.tabTimkiem.Location = new System.Drawing.Point(8, 51);
             this.tabTimkiem.Name = "tabTimkiem";
             this.tabTimkiem.Padding = new System.Windows.Forms.Padding(3);
@@ -458,34 +468,71 @@ namespace BC_Vote
             this.tabTimkiem.Text = "find";
             this.tabTimkiem.UseVisualStyleBackColor = true;
             // 
+            // btnP2TimKiem
+            // 
+            this.btnP2TimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnP2TimKiem.Location = new System.Drawing.Point(761, 0);
+            this.btnP2TimKiem.Name = "btnP2TimKiem";
+            this.btnP2TimKiem.Size = new System.Drawing.Size(150, 46);
+            this.btnP2TimKiem.TabIndex = 3;
+            this.btnP2TimKiem.Text = "Tìm kiếm";
+            this.btnP2TimKiem.UseVisualStyleBackColor = true;
+            // 
+            // tbxTimKiem
+            // 
+            this.tbxTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxTimKiem.Location = new System.Drawing.Point(3, 3);
+            this.tbxTimKiem.Name = "tbxTimKiem";
+            this.tbxTimKiem.Size = new System.Drawing.Size(752, 43);
+            this.tbxTimKiem.TabIndex = 2;
+            // 
             // tabKiemPhieu
             // 
+            this.tabKiemPhieu.Controls.Add(this.btnKiemTra);
             this.tabKiemPhieu.Controls.Add(this.tbxInputKiemPhieu);
-            this.tabKiemPhieu.Location = new System.Drawing.Point(8, 51);
+            this.tabKiemPhieu.Location = new System.Drawing.Point(8, 46);
             this.tabKiemPhieu.Name = "tabKiemPhieu";
             this.tabKiemPhieu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabKiemPhieu.Size = new System.Drawing.Size(914, 672);
+            this.tabKiemPhieu.Size = new System.Drawing.Size(914, 677);
             this.tabKiemPhieu.TabIndex = 1;
             this.tabKiemPhieu.Text = "check";
             this.tabKiemPhieu.UseVisualStyleBackColor = true;
             // 
+            // btnKiemTra
+            // 
+            this.btnKiemTra.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnKiemTra.Location = new System.Drawing.Point(761, 0);
+            this.btnKiemTra.Name = "btnKiemTra";
+            this.btnKiemTra.Size = new System.Drawing.Size(150, 46);
+            this.btnKiemTra.TabIndex = 1;
+            this.btnKiemTra.Text = "Kiểm tra";
+            this.btnKiemTra.UseVisualStyleBackColor = true;
+            this.btnKiemTra.Click += new System.EventHandler(this.btnKiemTra_Click);
+            // 
             // tbxInputKiemPhieu
             // 
-            this.tbxInputKiemPhieu.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tbxInputKiemPhieu.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.tbxInputKiemPhieu.Location = new System.Drawing.Point(3, 3);
             this.tbxInputKiemPhieu.Name = "tbxInputKiemPhieu";
-            this.tbxInputKiemPhieu.Size = new System.Drawing.Size(908, 43);
+            this.tbxInputKiemPhieu.Size = new System.Drawing.Size(752, 43);
             this.tbxInputKiemPhieu.TabIndex = 0;
+            this.tbxInputKiemPhieu.KeyDown += new System.Windows.Forms.KeyEventHandler(this.tbxInputKiemPhieu_KeyDown);
             // 
             // tabDangKyThamDu
             // 
-            this.tabDangKyThamDu.Location = new System.Drawing.Point(8, 51);
+            this.tabDangKyThamDu.Location = new System.Drawing.Point(8, 46);
             this.tabDangKyThamDu.Name = "tabDangKyThamDu";
             this.tabDangKyThamDu.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDangKyThamDu.Size = new System.Drawing.Size(914, 672);
+            this.tabDangKyThamDu.Size = new System.Drawing.Size(914, 677);
             this.tabDangKyThamDu.TabIndex = 2;
             this.tabDangKyThamDu.Text = "sign";
             this.tabDangKyThamDu.UseVisualStyleBackColor = true;
+            // 
+            // openFileDialog1
+            // 
+            this.openFileDialog1.FileName = "openFileDialog1";
             // 
             // MainForm
             // 
@@ -506,6 +553,8 @@ namespace BC_Vote
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
+            this.tabTimkiem.ResumeLayout(false);
+            this.tabTimkiem.PerformLayout();
             this.tabKiemPhieu.ResumeLayout(false);
             this.tabKiemPhieu.PerformLayout();
             this.ResumeLayout(false);
@@ -549,7 +598,7 @@ namespace BC_Vote
         private System.Windows.Forms.SplitContainer splitContainer1;
         private System.Windows.Forms.Button btnDangKyThamDu;
         private System.Windows.Forms.Label lbTitleSelect;
-        private System.Windows.Forms.ListView listView1;
+        private System.Windows.Forms.ListView listView;
         private System.Windows.Forms.Button btnTimKiem;
         private System.Windows.Forms.Button btnKiemPhieu;
         private System.Windows.Forms.ColumnHeader columnHeader1;
@@ -560,6 +609,10 @@ namespace BC_Vote
         private System.Windows.Forms.TabPage tabKiemPhieu;
         private System.Windows.Forms.TabPage tabDangKyThamDu;
         private System.Windows.Forms.TextBox tbxInputKiemPhieu;
+        private System.Windows.Forms.Button btnKiemTra;
+        private System.Windows.Forms.Button btnP2TimKiem;
+        private System.Windows.Forms.TextBox tbxTimKiem;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
     }
 }
 

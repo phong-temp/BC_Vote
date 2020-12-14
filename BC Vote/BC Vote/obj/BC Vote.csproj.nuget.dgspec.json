@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\phong\\source\\repos\\BC_Vote\\BC Vote\\BC Vote\\BC Vote.csproj": {}
+    "C:\\Users\\phong\\Google Drive\\Document\\Visual Studio 2019\\Project\\BC Vote\\BC Vote\\BC Vote.csproj": {}
   },
   "projects": {
-    "C:\\Users\\phong\\source\\repos\\BC_Vote\\BC Vote\\BC Vote\\BC Vote.csproj": {
+    "C:\\Users\\phong\\Google Drive\\Document\\Visual Studio 2019\\Project\\BC Vote\\BC Vote\\BC Vote.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\phong\\source\\repos\\BC_Vote\\BC Vote\\BC Vote\\BC Vote.csproj",
+        "projectUniqueName": "C:\\Users\\phong\\Google Drive\\Document\\Visual Studio 2019\\Project\\BC Vote\\BC Vote\\BC Vote.csproj",
         "projectName": "BC Vote",
-        "projectPath": "C:\\Users\\phong\\source\\repos\\BC_Vote\\BC Vote\\BC Vote\\BC Vote.csproj",
+        "projectPath": "C:\\Users\\phong\\Google Drive\\Document\\Visual Studio 2019\\Project\\BC Vote\\BC Vote\\BC Vote.csproj",
         "packagesPath": "C:\\Users\\phong\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\phong\\source\\repos\\BC_Vote\\BC Vote\\BC Vote\\obj\\",
+        "outputPath": "C:\\Users\\phong\\Google Drive\\Document\\Visual Studio 2019\\Project\\BC Vote\\BC Vote\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phong\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[4.5.2.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
